@@ -1,0 +1,10 @@
+{
+    "port": 4003,
+    "postgres": {
+        "habilitado": true,
+        "host": "localhost",
+        "database": "TesteBrainAgriculture",
+        "username": "bamanager",
+        "password": "baadmin"
+    }
+}

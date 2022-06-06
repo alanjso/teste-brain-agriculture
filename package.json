@@ -1,0 +1,34 @@
+{
+  "name": "teste-brain-agriculture",
+  "version": "1.0.0",
+  "description": "Teste - Brain Agriculture: O teste tem como objetivo acurar as habilidades do candidato em resolver alguns problemas relacionados à lógica de programação, regra de negócio e orientação à objetos.",
+  "main": "src/init.js",
+  "scripts": {
+    "test": "mocha --exit",
+    "start": "nodemon src/init.js"
+  },
+  "keywords": [
+    "api",
+    "Teste",
+    "brain agriculture",
+    "produtor rural",
+    "dashboard",
+    "PostgreSQL",
+    "pgsql",
+    "sequelize",
+    "postgres"
+  ],
+  "author": "Alan Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "config": "^3.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "^7.1.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.20.1",
+    "supertest": "^4.0.2",
+    "yup": "^0.32.11"
+  }
+}
