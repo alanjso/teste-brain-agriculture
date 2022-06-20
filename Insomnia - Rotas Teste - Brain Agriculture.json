@@ -1,8 +1,8 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2022-06-06T20:44:29.484Z",
-    "__export_source": "insomnia.desktop.app:v2022.3.0",
+    "__export_date": "2022-06-20T18:13:19.645Z",
+    "__export_source": "insomnia.desktop.app:v2022.4.1",
     "resources": [
         {
             "_id": "req_4324b3a27e71497482dd5d4967e66880",
@@ -233,7 +233,7 @@
         {
             "_id": "req_a5b9eaedd3f34531aba077ba94071e04",
             "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
-            "modified": 1654287221558,
+            "modified": 1655730992254,
             "created": 1654198731833,
             "url": "http://localhost:4001/v1/produtorrural",
             "name": "Lista Produtores Rurais por nome",
@@ -255,7 +255,11 @@
                 }
             ],
             "headers": [],
-            "authentication": {},
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5vbWVfcHJvZHV0b3IiOiJQcm9kdXRvciAoY2FuYSBkZSBhw6fDumNhcikiLCJkb2N1bWVudCI6IjM5OTczNTI2MDAwMTkzIn0sImlhdCI6MTY1NTczMDk3MSwiZXhwIjoxNjU1Nzc0MTcxfQ.ZQgCW_svTBORY-bMVn-mRIvt-qjkis0bk7lK6yQPM5k",
+                "prefix": "Bearer"
+            },
             "metaSortKey": -1654206255876,
             "isPrivate": false,
             "settingStoreCookies": true,
@@ -269,7 +273,7 @@
         {
             "_id": "req_100fad6a75e74288b16bd0fce05cd27b",
             "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
-            "modified": 1654369941245,
+            "modified": 1655748589747,
             "created": 1654198782832,
             "url": "http://localhost:4001/v1/produtorrural",
             "name": "Cria Produtor Rural",
@@ -277,7 +281,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"nome_produtor\": \"Produtor CPF area inválida\",\n\t\"nome_fazenda\": \"Fazendinha Feliz!\",\n\t\"document\": \"057.381.530-57\",\n\t\"cidade\": \"Fortaleza\",\n\t\"estado\": \"Ceara\",\n\t\"area_total_fazenda\": 99,\n\t\"area_agricultavel\": 50,\n\t\"area_vegetacao\": 50,\n\t\"culturas_plantadas\": [\"Soja\", \"Milho\", \"Algodão\", 15, true ]\n}"
+                "text": "{\n\t\"nome_produtor\": \"Produtor CPF area válida\",\n\t\"nome_fazenda\": \"Fazendinha Feliz!\",\n\t\"document\": \"057.381.530-57\",\n\t\"cidade\": \"Fortaleza\",\n\t\"estado\": \"Ceara\",\n\t\"area_total_fazenda\": 100,\n\t\"area_agricultavel\": 50,\n\t\"area_vegetacao\": 50,\n\t\"culturas_plantadas\": [\"Soja\", \"Milho\", \"Algodão\", 15, true ],\n\t\"password\": \"1q2w3e!Q@W#E\"\n}"
             },
             "parameters": [],
             "headers": [
@@ -301,15 +305,15 @@
         {
             "_id": "req_e00b86d1dc9847d5aef5fe39a0816b7e",
             "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
-            "modified": 1654369089583,
+            "modified": 1655748592048,
             "created": 1654206255826,
-            "url": "http://localhost:4001/v1/produtorrural/id_aqui",
+            "url": "http://localhost:4001/v1/produtorrural/97e5e322-5efe-4601-8f1d-ba0fe33748e6",
             "name": "Edita Produtor Rural",
             "description": "",
             "method": "PUT",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"nome_produtor\": \"Produtor CPF\",\n\t\"nome_fazenda\": \"Fazendinha Feliz!\",\n\t\"document\": \"cpf\",\n\t\"cidade\": \"Fortaleza\",\n\t\"estado\": \"Ceara\",\n\t\"area_total_fazenda\": 100,\n\t\"area_agricultavel\": 50,\n\t\"area_vegetacao\": 50,\n\t\"culturas_plantadas\": [\"Soja\", \"Milho\", \"Algodão\", 15, true ]\n}"
+                "text": "{\n\t\"nome_produtor\": \"Produtor CPF\",\n\t\"nome_fazenda\": \"Fazendinha Feliz!\",\n\t\"document\": \"\",\n\t\"cidade\": \"Fortaleza\",\n\t\"estado\": \"Ceara\",\n\t\"area_total_fazenda\": 100,\n\t\"area_agricultavel\": 50,\n\t\"area_vegetacao\": 50,\n\t\"culturas_plantadas\": [\"Soja\", \"Milho\", \"Algodão\", 15, true ]\n}"
             },
             "parameters": [],
             "headers": [
@@ -335,7 +339,7 @@
             "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
             "modified": 1654268204630,
             "created": 1654206358399,
-            "url": "http://localhost:4001/v1/produtorrural/id_aqui",
+            "url": "http://localhost:4001/v1/produtorrural/b27045a6-463c-43ff-b2a1-d9faa6f96392",
             "name": "Deleta Produtor Rural",
             "description": "",
             "method": "DELETE",
@@ -365,9 +369,9 @@
         {
             "_id": "req_f5f680da961749889a2a83969850c3f9",
             "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
-            "modified": 1654268249196,
+            "modified": 1655748672392,
             "created": 1654206362220,
-            "url": "http://localhost:4001/v1/produtorrural/id_aqui",
+            "url": "http://localhost:4001/v1/produtorrural/11a616c2-40ab-4058-93da-f3d427148eda",
             "name": "Busca Produtor Rural pelo ID",
             "description": "",
             "method": "GET",
@@ -383,8 +387,116 @@
                     "id": "pair_238fc49e8f584421b9b60731283a8a20"
                 }
             ],
-            "authentication": {},
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5vbWVfcHJvZHV0b3IiOiJQcm9kdXRvciAoY2FuYSBkZSBhw6fDumNhcikiLCJkb2N1bWVudCI6IjM5OTczNTI2MDAwMTkzIn0sImlhdCI6MTY1NTc0ODYxOSwiZXhwIjoxNjU1NzkxODE5fQ.i1-m30XYDgFeB7d5a3AsX7HoMLh8ZSGF2LlnuKeuhlY",
+                "prefix": "Bearer"
+            },
             "metaSortKey": -1651412327219.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b5fa2a42021a41999d44e04b33e41eb5",
+            "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
+            "modified": 1655748747387,
+            "created": 1655680099804,
+            "url": "http://localhost:4001/v1/login",
+            "name": "Login Produtor rural",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"document\": \"39973526000193\",\n\t\"password\": \"1q2w3e!Q@W#E\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_238fc49e8f584421b9b60731283a8a20"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1650946672451.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_414981a486fd43d2b2d1866889ce6415",
+            "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
+            "modified": 1655748704664,
+            "created": 1655733773475,
+            "url": "http://localhost:4001/v1/produtorrural/resetpw",
+            "name": "Reset Pw Produtor rural",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"document\": \"39973526000193\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_238fc49e8f584421b9b60731283a8a20"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "Bearer",
+                "token": "aaa"
+            },
+            "metaSortKey": -1650713845067.875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e39483af8998490d9f50b1b036841116",
+            "parentId": "wrk_3d24962df35d4decb6465902038b49e2",
+            "modified": 1655748736926,
+            "created": 1655734268035,
+            "url": "http://localhost:4001/v1/produtorrural/changepw",
+            "name": "Change Pw Produtor rural",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"document\": \"39973526000193\",\n\t\"password\": \"123456\",\n\t\"new_password\": \"1q2w3e!Q@W#E\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_238fc49e8f584421b9b60731283a8a20"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "Bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5vbWVfcHJvZHV0b3IiOiJQcm9kdXRvciAoY2FuYSBkZSBhw6fDumNhcikiLCJkb2N1bWVudCI6IjM5OTczNTI2MDAwMTkzIn0sImlhdCI6MTY1NTczNDM0MCwiZXhwIjoxNjU1Nzc3NTQwfQ.WRFtBmgmzQ7Wgh-nzG_2RVbSKKIoced6ArdtfK4iflg"
+            },
+            "metaSortKey": -1650597431375.9375,
             "isPrivate": false,
             "settingStoreCookies": true,
             "settingSendCookies": true,

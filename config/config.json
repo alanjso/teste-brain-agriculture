@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "bamanager",
+    "password": "baadmin",
+    "database": "TesteBrainAgriculture",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "bamanager",
+    "password": "baadmin",
+    "database": "TesteBrainAgriculture",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "bamanager",
+    "password": "baadmin",
+    "database": "TesteBrainAgriculture",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

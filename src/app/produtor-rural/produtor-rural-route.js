@@ -12,4 +12,10 @@ module.exports = routes => {
     routes.delete(`${SERVICE}/:id`, produtorRuralService.delete);
 
     routes.get(`${SERVICE}/:id`, produtorRuralService.getById);
+
+    routes.post(`${SERVICE}/changepw`, produtorRuralService.changePassword);
+
+    routes.post(`${SERVICE}/resetpw`, produtorRuralService.resetPassword);
+
+    routes.post(`/login`, produtorRuralService.login);
 }

@@ -6,5 +6,7 @@
         "database": "TesteBrainAgriculture",
         "username": "bamanager",
         "password": "baadmin"
-    }
+    },
+    "saltRounds": 10,
+    "jwtSecret": "brainAgriculture"
 }

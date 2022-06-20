@@ -1,6 +1,9 @@
 const { produtorRuralValidation } = require('../app/produtor-rural/produtor-rural-model');
 const validarCNPJ = require('./validar-cnpj');
 const validarCPF = require('./validar-cpf');
+const bcrypt = require('bcrypt');
+const config = require('config');
+const saltRounds = config.get("saltRounds");
 
 async function validarFormatarProdutorRural(produtorRuralOriginal) {
     let isValid = false;
@@ -34,6 +37,7 @@ async function validarFormatarProdutorRural(produtorRuralOriginal) {
             }
         });
         produtorRuralFormatado.culturas_plantadas = culturas_plantadas_Formatadas;
+        produtorRuralFormatado.password = await bcrypt.hash(produtorRuralOriginal.password, saltRounds);
         return { isValid, produtorRuralFormatado };
     } catch (error) {
         console.log(" Erro em validarFormatarProdutorRural:");

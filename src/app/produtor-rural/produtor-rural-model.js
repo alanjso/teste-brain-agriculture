@@ -50,6 +50,10 @@ ProdutorRural.init(
         },
         culturas_plantadas: {
             type: Sequelize.ARRAY(Sequelize.ENUM(['soja', 'milho', 'algodão', 'café', 'cana de açúcar'])),
+        },
+        password: {
+            type: Sequelize.STRING,
+            allowNull: false
         }
     }, {
     sequelize: pgsql,
@@ -66,7 +70,8 @@ let produtorRuralValidation = yup.object().shape({
     area_total_fazenda: yup.number().required(),
     area_agricultavel: yup.number().required(),
     area_vegetacao: yup.number().required(),
-    culturas_plantadas: yup.array()
+    culturas_plantadas: yup.array(),
+    password: yup.string().required()
 });
 
 exports.ProdutorRural = ProdutorRural;
